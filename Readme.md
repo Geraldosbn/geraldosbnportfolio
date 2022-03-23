@@ -1,4 +1,5 @@
-## Esse é o projeto do meu portifólio, é aqui que pretendo reunir minhas conquistas, ainda esta em construção, mas para mim já é uma conquista!
+## Sobre
+Esse é o projeto do meu portifólio, é aqui que pretendo reunir minhas conquistas, ainda esta em construção, mas para mim já é uma conquista!
 
 ## Tecnologias
 * Html, CSS, Javascript, Git & GitHub.
