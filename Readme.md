@@ -4,7 +4,7 @@ Esse é o projeto do meu portifólio, é aqui que pretendo reunir minhas conquis
 ## Tecnologias
 * Html, CSS, Javascript, Git & GitHub.
 
-## 🔗 Autor
+## Autor
 
 Geraldo Barbosa
 <div> 
