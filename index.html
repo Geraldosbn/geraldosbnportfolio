@@ -6,87 +6,69 @@
     <link rel="stylesheet" href="./assets/style/style.css">
   </head>
   <body>
-    <header class="header-container" style="background-image: url('assets/img/background-green.jpg'); background-size: cover;">
+    <header class="header-container" style="background-image: url('assets/img/portifolio-background.jpeg'); background-size: cover; filter: grayscale(1);">
       <div class="header">
-        <div class="checkbox-container">
-          <div class="checkbox-wraper">
-            <input type="checkbox" id="toggle">
-            <label class="checkbox" for="toggle" id="label-toggle">
-              <div class="trace"></div>
-              <div class="trace"></div>
-              <div class="trace"></div>
-            </label>
-            <div class="menu"></div>
-            <nav class="menu-items">
-              <ul>
-                <li>
-                  <a href="index.html" onclick="disable('yes')">Home</a>
-                </li>
-                <li>
-                  <a href="#personal" onclick="disable('yes')">Sobre</a>
-                </li>
-                <li>
-                  <a href="#projects" onclick="disable('yes')">Projetos - GitHub</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+        <div class="links">
+          <a href="#projects">Projetos</a>
+          <a href="#skills-education">Curriculo</a>
+          <a href="https://www.linkedin.com/in/geraldo-barbosa-a50629146/">LinkedIn</a>
+          <a href="https://github.com/geraldosbn">GitHub</a>
         </div>
-      </div>
+      <section class="container-profile">
       <div class="profile">
-        <img src="./assets/img/Perfil.jpeg" id="ftPerfil" alt="foto de perfil">
         <h1>Geraldo Barbosa</h1>
-        <h2>Front-end developer</h2>
+        <h2>Full-stack developer</h2>
       </div>
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/geraldo-barbosa-a50629146/">LinkedIn</a>
-        <a href="https://github.com/geraldosbn">GitHub</a>
-      </div>
-    </header>
-    <section class="description">
       <div class="aboutMe" id="personal">
         <h2>Perfil pessoal</h2>
         <br>
-          <p class="content">Sou um Full Stack developer em formação, fui absorvido
+          <p class="content"> Dev Full Stack em formaçãon tenho 29 anos, fui absorvido
             por esse universo que é a tecnologia, sempre
             curioso por saber como as coisas funcionam para
             poder usar isso na resolução de problemas e
-            alcançar meus objetivos
+            alcançar meus objetivos.
           </p>
-          <p class="content">Desejo trabalhar em um ambiente colaborativo,
+          <p class="content"> Desejo trabalhar em um ambiente colaborativo,
               pois o que mais quero é poder colaborar com o
               time que eu tiver inserido e também aprender
-              muito, que é o que eu mais preciso.
+              muito!
           </p>
-          <p class="content">Estudo tecnologias como JavaScript, HTML,
-            CSS, NodeJS, Mysql, Git entre outras que
+          <p class="content">Estudo tecnologias como <b>JavaScript, HTML,
+            CSS, NodeJS, Mysql, Git</b> entre outras que
             compõem a área do desenvolvimento Full-stack
             abrangendo tanto o Front-end quanto o Back-
             end.
           </p>
       </div>
-
-      <div class="skills">
-        <h2 class="title">Habilidades</h2>
-          <p class="conteudo"> HTML5,CSS3, JAVASCRIPT, MYSQL, GIT E GITHUB.</p>
-      </div>
-
-      <div class="education">
-        <h2>Formação Acadêmica</h2>
-        <h4 class="title">Senac - Centro universitário santo amaro </h4>
-          <p class="content">Análise e desenvolvimento de sistemas (2020-2022)</p>
-        <h4 class="title">Curso Udemy (Cursando) </h4>
-          <p class="content">FRONT-END COM WEBPACK BABEL, REACT, HOOKS, REDUX, HTML E CSS. 
-                              BACK-END COM NODEJS, EXPRESS,MYSQL, MONGODB, NEXTJS, STRAPI.
-          </p>
-        <h4 class="title">Curso de Inglês kultivi (Cursando)</h4>
-             <p class="content">Inglês online na kultivi</p>
-      </div>
     </section>
-    <main class="container" id="projects">
-      <h2>Projetos</h2>
+    </header>
+
+    <main class="container" id="main">
+
+      <div class="container-description" id="skills-education">
+        <div class="skills">
+          <h2 class="title">Habilidades</h2>
+            <p class="conteudo"> HTML5,CSS3, JavaScript, MySQL, Git E GitHub.</p>
+        </div>
+  
+        <div class="education">
+          <h2>Formação Acadêmica</h2>
+          <h4 class="title">Senac - Centro universitário santo amaro </h4>
+            <p class="content">Análise e desenvolvimento de sistemas (2020-2022)</p>
+          
+            <h4 class="title">JavaScript e TypeScript Full-stack - Prof Luiz Otávio Miranda (Cursando) </h4>
+            <p class="content">Front-end com webpack babel, React, Hooks, Redux, Html e Css.<br> 
+                                Back-end com NodeJS, Express,MySQL, MongoDB, NextJS, Strapi.
+            </p>
+          <h4 class="title">Curso de Inglês kultivi (Cursando)</h4>
+               <p class="content">Inglês online na kultivi</p>
+        </div>
+      </div>
+
+      <div class="container-projects" id="projects">
+        <h2>Projetos</h2>
       <div class="card-container">
-        <div class="card" id="card1" style="background-image: url('assets/img/img-timer.jpeg'); background-repeat: no-repeat;">
+        <div class="card" style="background-image: url('assets/img/img-timer.jpeg'); background-repeat: no-repeat;">
           <a href="https://geraldosbn.github.io/timer/">
           <div class="card-wrapper">
               <p>Vem ver!</p>
@@ -95,18 +77,17 @@
         </div>
           <div class="card-text">
             <h3>Timer usando JS, HTML e CSS:</h3>
-            <p> Fiz esse timer como exercicio de lógica de programação.
-                Usando setInterval para adicionar valor a variavel segundos
-                e pegando o formato de timer com a função .toLocaleTimeString.
-            </p> 
+            <p> Fiz esse timer como exercicio de lógica de programação. 
+              Usando setInterval para adicionar valor a variavel segundos e pegando o formato de timer com a função 
+              .toLocaleTimeString.</p> 
             <h3>Funções aprendidas:</h3>
-            <p>
-              addEventListener, setInterval, clearInternval, Date, .toLocaleTimeString.
-            </p>
+            <p>addEventListener, setInterval, clearInternval, Date, .toLocaleTimeString.</p>
           </div>
       </div>
+      </div>
+      
       <div class="card-container">
-        <div class="card" id="card2" style="background-image: url('assets/img/img-IMC.png'); background-repeat: no-repeat;">
+        <div class="card" style="background-image: url('assets/img/img-IMC.png'); background-repeat: no-repeat;">
           <a href="https://geraldosbn.github.io/calculadora-imc/">
           <div class="card-wrapper">
               <p>Vem ver!</p>
@@ -117,13 +98,14 @@
             <h3>Calculadora IMC usando JS, HTML e CSS:</h3>
             <p> Aprendi nesse exercicio um pouco mais sobre o uso de funções dentro JS.
               <br><br>
-                Aprendi as funções: creatELement e o appendChild.
-              <br><br>
+              <h3>Funções aprendidas:</h3> reatELement e o appendChild.
+              <br>
                 Adicionei a ela uma especie de historico com as consultas feitas, 
                 então quando uma é feita um consulta a mesma é guardada na aba de historico.
             </p>
           </div>
       </div>
+      
     </main>
 
     <footer class="footer">
