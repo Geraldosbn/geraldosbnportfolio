@@ -225,3 +225,16 @@ h3 {
     justify-content: space-around;
     color: #fff;
 }
+
+@media (max-width: 1200px) {
+
+    .container-profile {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+}
